@@ -1,0 +1,8 @@
+(module "Barrel Jack PJ-002A" (layer F.Cu) (tedit 55F5FEDF)
+  (fp_text reference REF** (at 0.08636 13.62964) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value "Barrel Jack PJ-002A" (at -0.19812 -12.18692) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+)

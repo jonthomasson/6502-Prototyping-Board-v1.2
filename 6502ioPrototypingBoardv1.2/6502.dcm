@@ -1,0 +1,80 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 7400
+D Quad nand2
+K TTL nand2
+$ENDCMP
+#
+$CMP 74HC00
+D Quad nand2
+K HCMOS nand2
+$ENDCMP
+#
+$CMP 74HCT00
+D Quad nand2
+K HCTMOS nand2
+$ENDCMP
+#
+$CMP 74LS00
+D Quad nand2
+K TTL nand2
+$ENDCMP
+#
+$CMP 74LS00_NEW
+D Quad nand2
+K TTL nand2
+$ENDCMP
+#
+$CMP 74LS37
+D Quad Buffer nand2
+K TTL nand2 buffer
+$ENDCMP
+#
+$CMP BARREL_JACK
+D DC Barrel Jack
+K DC power barrel jack connector
+$ENDCMP
+#
+$CMP BARREL_JACK_NEW
+D DC Barrel Jack
+K DC power barrel jack connector
+$ENDCMP
+#
+$CMP LM7805
+D Linear Regulator +5V
+K POWER REGUL
+F regulator\lm78xx.pdf
+$ENDCMP
+#
+$CMP P_MOSFET
+D 200V Vds, N-Channel MOSFET, TO-92
+K N-Channel MOSFET
+F http://www.vishay.com/docs/70215/70215.pdf
+$ENDCMP
+#
+$CMP R
+D Resistor
+K R DEV
+$ENDCMP
+#
+$CMP RR7
+D 8 resistors
+K R DEV
+$ENDCMP
+#
+$CMP SPST2
+D Interrupteur simple
+K switch
+$ENDCMP
+#
+$CMP SW_PUSH
+D Button
+K Switch
+$ENDCMP
+#
+$CMP SW_PUSH_SAFE
+D Button
+K Switch
+$ENDCMP
+#
+#End Doc Library

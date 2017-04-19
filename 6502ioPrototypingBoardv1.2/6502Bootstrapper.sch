@@ -1,0 +1,1369 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:6502
+LIBS:dips-s
+LIBS:6502Bootstrapper-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 65C02 U1
+U 1 1 55F0FDE5
+P 2800 2750
+F 0 "U1" H 2650 50  60  0000 C CNN
+F 1 "65C02" H 2650 3900 60  0000 C CNN
+F 2 "6502Footprints:65c02" H 2800 2750 60  0001 C CNN
+F 3 "" H 2800 2750 60  0000 C CNN
+	1    2800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L AT28C256_EEPROM U2
+U 1 1 55F11424
+P 5350 2650
+F 0 "U2" H 4800 -50 60  0000 C CNN
+F 1 "AT28C256_EEPROM" H 4800 3700 60  0000 C CNN
+F 2 "6502Footprints:A302_ND_SOCKET" H 5350 2650 60  0001 C CNN
+F 3 "" H 5350 2650 60  0000 C CNN
+	1    5350 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 62256_SRAM U3
+U 1 1 55F12F33
+P 7750 2650
+F 0 "U3" H 7150 -50 60  0000 C CNN
+F 1 "62256_SRAM" H 7200 3700 60  0000 C CNN
+F 2 "6502Footprints:62256_SRAM" H 7700 2850 60  0001 C CNN
+F 3 "" H 7700 2850 60  0000 C CNN
+	1    7750 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR01
+U 1 1 55F1BAD4
+P 1500 2850
+F 0 "#PWR01" H 1500 2700 50  0001 C CNN
+F 1 "VCC" H 1500 3000 50  0000 C CNN
+F 2 "" H 1500 2850 60  0000 C CNN
+F 3 "" H 1500 2850 60  0000 C CNN
+	1    1500 2850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR02
+U 1 1 55F1BDFD
+P 5600 1800
+F 0 "#PWR02" H 5600 1650 50  0001 C CNN
+F 1 "VCC" H 5600 1950 50  0000 C CNN
+F 2 "" H 5600 1800 60  0000 C CNN
+F 3 "" H 5600 1800 60  0000 C CNN
+	1    5600 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 55F1BE1D
+P 5600 1950
+F 0 "#PWR03" H 5600 1700 50  0001 C CNN
+F 1 "GND" H 5600 1800 50  0000 C CNN
+F 2 "" H 5600 1950 60  0000 C CNN
+F 3 "" H 5600 1950 60  0000 C CNN
+	1    5600 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 55F1C168
+P 8000 1950
+F 0 "#PWR04" H 8000 1700 50  0001 C CNN
+F 1 "GND" H 8000 1800 50  0000 C CNN
+F 2 "" H 8000 1950 60  0000 C CNN
+F 3 "" H 8000 1950 60  0000 C CNN
+	1    8000 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR05
+U 1 1 55F1C188
+P 8000 1800
+F 0 "#PWR05" H 8000 1650 50  0001 C CNN
+F 1 "VCC" H 8000 1950 50  0000 C CNN
+F 2 "" H 8000 1800 60  0000 C CNN
+F 3 "" H 8000 1800 60  0000 C CNN
+	1    8000 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 55F1D1AA
+P 2000 4050
+F 0 "#PWR06" H 2000 3800 50  0001 C CNN
+F 1 "GND" H 2000 3900 50  0000 C CNN
+F 2 "" H 2000 4050 60  0000 C CNN
+F 3 "" H 2000 4050 60  0000 C CNN
+	1    2000 4050
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 55F1D490
+P 2425 6425
+F 0 "#PWR07" H 2425 6175 50  0001 C CNN
+F 1 "GND" H 2425 6275 50  0000 C CNN
+F 2 "" H 2425 6425 60  0000 C CNN
+F 3 "" H 2425 6425 60  0000 C CNN
+	1    2425 6425
+	0    1    1    0   
+$EndComp
+Text GLabel 3575 6425 2    60   Input ~ 0
+RESET
+Text GLabel 2000 3000 0    60   Input ~ 0
+RESET
+$Comp
+L ECS-2100X-1MHZ Y1
+U 1 1 55F1E202
+P 4950 6000
+F 0 "Y1" H 4975 6125 60  0000 C CNN
+F 1 "ECS-2100X-1MHZ" H 4975 6225 60  0000 C CNN
+F 2 "6502Footprints:ECS-2100AX" H 4950 6000 60  0001 C CNN
+F 3 "" H 4950 6000 60  0000 C CNN
+	1    4950 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 55F1E2D2
+P 5500 6000
+F 0 "#PWR08" H 5500 5750 50  0001 C CNN
+F 1 "GND" H 5500 5850 50  0000 C CNN
+F 2 "" H 5500 6000 60  0000 C CNN
+F 3 "" H 5500 6000 60  0000 C CNN
+	1    5500 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR09
+U 1 1 55F1E370
+P 4550 6200
+F 0 "#PWR09" H 4550 6050 50  0001 C CNN
+F 1 "VCC" H 4550 6350 50  0000 C CNN
+F 2 "" H 4550 6200 60  0000 C CNN
+F 3 "" H 4550 6200 60  0000 C CNN
+	1    4550 6200
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2000 3450 0    60   Input ~ 0
+CLOCK
+Entry Wire Line
+	3550 2850 3650 2750
+Entry Wire Line
+	6100 2750 6200 2850
+Entry Wire Line
+	6100 2600 6200 2700
+Entry Wire Line
+	6100 2450 6200 2550
+Entry Wire Line
+	6100 2300 6200 2400
+Entry Wire Line
+	6100 2150 6200 2250
+Entry Wire Line
+	6100 2000 6200 2100
+Entry Wire Line
+	6100 1850 6200 1950
+Entry Wire Line
+	6100 1700 6200 1800
+Text Label 6300 1800 0    60   ~ 0
+D0
+Text Label 6300 1950 0    60   ~ 0
+D1
+Text Label 6300 2100 0    60   ~ 0
+D2
+Text Label 6300 2250 0    60   ~ 0
+D3
+Text Label 6300 2400 0    60   ~ 0
+D4
+Text Label 6300 2550 0    60   ~ 0
+D5
+Text Label 6300 2700 0    60   ~ 0
+D6
+Text Label 6300 2850 0    60   ~ 0
+D7
+Entry Wire Line
+	3550 2700 3650 2600
+Entry Wire Line
+	3550 2550 3650 2450
+Entry Wire Line
+	3550 2400 3650 2300
+Entry Wire Line
+	3550 2250 3650 2150
+Entry Wire Line
+	3550 2100 3650 2000
+Entry Wire Line
+	3550 1950 3650 1850
+Entry Wire Line
+	3550 1800 3650 1700
+Text Label 3300 1800 0    60   ~ 0
+D0
+Text Label 3300 1950 0    60   ~ 0
+D1
+Text Label 3300 2100 0    60   ~ 0
+D2
+Text Label 3300 2250 0    60   ~ 0
+D3
+Text Label 3300 2400 0    60   ~ 0
+D4
+Text Label 3300 2550 0    60   ~ 0
+D5
+Text Label 3300 2700 0    60   ~ 0
+D6
+Text Label 3300 2850 0    60   ~ 0
+D7
+Entry Wire Line
+	3650 1700 3750 1800
+Entry Wire Line
+	3650 1850 3750 1950
+Entry Wire Line
+	3650 2000 3750 2100
+Entry Wire Line
+	3650 2150 3750 2250
+Entry Wire Line
+	3650 2300 3750 2400
+Entry Wire Line
+	3650 2450 3750 2550
+Entry Wire Line
+	3650 2600 3750 2700
+Entry Wire Line
+	3650 2750 3750 2850
+Text Label 3850 1800 0    60   ~ 0
+D0
+Text Label 3850 1950 0    60   ~ 0
+D1
+Text Label 3850 2100 0    60   ~ 0
+D2
+Text Label 3850 2250 0    60   ~ 0
+D3
+Text Label 3850 2400 0    60   ~ 0
+D4
+Text Label 3850 2550 0    60   ~ 0
+D5
+Text Label 3850 2700 0    60   ~ 0
+D6
+Text Label 3850 2850 0    60   ~ 0
+D7
+Entry Wire Line
+	3650 3100 3750 3000
+Entry Wire Line
+	6100 3100 6200 3000
+Entry Wire Line
+	3650 3250 3750 3150
+Entry Wire Line
+	3650 3400 3750 3300
+Entry Wire Line
+	3650 3550 3750 3450
+Entry Wire Line
+	3650 3700 3750 3600
+Entry Wire Line
+	3650 3850 3750 3750
+Entry Wire Line
+	3650 4000 3750 3900
+Entry Wire Line
+	3650 4150 3750 4050
+Entry Wire Line
+	3650 4300 3750 4200
+Entry Wire Line
+	3650 4450 3750 4350
+Entry Wire Line
+	3650 4600 3750 4500
+Entry Wire Line
+	3650 4750 3750 4650
+Entry Wire Line
+	3650 4900 3750 4800
+Entry Wire Line
+	3650 5050 3750 4950
+Entry Wire Line
+	3650 5200 3750 5100
+Entry Wire Line
+	6100 3250 6200 3150
+Entry Wire Line
+	6100 3400 6200 3300
+Entry Wire Line
+	6100 3550 6200 3450
+Entry Wire Line
+	6100 3700 6200 3600
+Entry Wire Line
+	6100 3850 6200 3750
+Entry Wire Line
+	6100 4000 6200 3900
+Entry Wire Line
+	6100 4150 6200 4050
+Entry Wire Line
+	6100 4300 6200 4200
+Entry Wire Line
+	6100 4450 6200 4350
+Entry Wire Line
+	6100 4600 6200 4500
+Entry Wire Line
+	6100 4750 6200 4650
+Entry Wire Line
+	6100 4900 6200 4800
+Entry Wire Line
+	6100 5050 6200 4950
+Entry Wire Line
+	6100 5200 6200 5100
+Text Label 3850 3000 0    60   ~ 0
+A0
+Text Label 3850 3150 0    60   ~ 0
+A1
+Text Label 3850 3300 0    60   ~ 0
+A2
+Text Label 3850 3450 0    60   ~ 0
+A3
+Text Label 3850 3600 0    60   ~ 0
+A4
+Text Label 3850 3750 0    60   ~ 0
+A5
+Text Label 3850 3900 0    60   ~ 0
+A6
+Text Label 3850 4050 0    60   ~ 0
+A7
+Text Label 3850 4200 0    60   ~ 0
+A8
+Text Label 3850 4350 0    60   ~ 0
+A9
+Text Label 3850 4500 0    60   ~ 0
+A10
+Text Label 3850 4650 0    60   ~ 0
+A11
+Text Label 3850 4800 0    60   ~ 0
+A12
+Text Label 3850 4950 0    60   ~ 0
+A13
+Text Label 3850 5100 0    60   ~ 0
+A14
+Text Label 6300 3000 0    60   ~ 0
+A0
+Text Label 6300 3150 0    60   ~ 0
+A1
+Text Label 6300 3300 0    60   ~ 0
+A2
+Text Label 6300 3450 0    60   ~ 0
+A3
+Text Label 6300 3600 0    60   ~ 0
+A4
+Text Label 6300 3750 0    60   ~ 0
+A5
+Text Label 6300 3900 0    60   ~ 0
+A6
+Text Label 6300 4050 0    60   ~ 0
+A7
+Text Label 6300 4200 0    60   ~ 0
+A8
+Text Label 6300 4350 0    60   ~ 0
+A9
+Text Label 6300 4500 0    60   ~ 0
+A10
+Text Label 6300 4650 0    60   ~ 0
+A11
+Text Label 6300 4800 0    60   ~ 0
+A12
+Text Label 6300 4950 0    60   ~ 0
+A13
+Text Label 6300 5100 0    60   ~ 0
+A14
+Entry Wire Line
+	3550 3000 3650 3100
+Entry Wire Line
+	3550 3150 3650 3250
+Entry Wire Line
+	3550 3300 3650 3400
+Entry Wire Line
+	3550 3450 3650 3550
+Entry Wire Line
+	3550 3600 3650 3700
+Entry Wire Line
+	3550 3750 3650 3850
+Entry Wire Line
+	3550 3900 3650 4000
+Entry Wire Line
+	3550 4050 3650 4150
+Entry Wire Line
+	3550 4200 3650 4300
+Entry Wire Line
+	3550 4350 3650 4450
+Entry Wire Line
+	3550 4500 3650 4600
+Entry Wire Line
+	3550 4650 3650 4750
+Entry Wire Line
+	3550 4800 3650 4900
+Entry Wire Line
+	3550 4950 3650 5050
+Entry Wire Line
+	3550 5100 3650 5200
+Text Label 3300 3000 0    60   ~ 0
+A0
+Text Label 3300 3150 0    60   ~ 0
+A1
+Text Label 3300 3300 0    60   ~ 0
+A2
+Text Label 3300 3450 0    60   ~ 0
+A3
+Text Label 3300 3600 0    60   ~ 0
+A4
+Text Label 3300 3750 0    60   ~ 0
+A5
+Text Label 3300 3900 0    60   ~ 0
+A6
+Text Label 3300 4050 0    60   ~ 0
+A7
+Text Label 3300 4200 0    60   ~ 0
+A8
+Text Label 3300 4350 0    60   ~ 0
+A9
+Text Label 3300 4500 0    60   ~ 0
+A10
+Text Label 3300 4650 0    60   ~ 0
+A11
+Text Label 3300 4800 0    60   ~ 0
+A12
+Text Label 3300 4950 0    60   ~ 0
+A13
+Text Label 3300 5100 0    60   ~ 0
+A14
+Text GLabel 2000 1950 0    60   Input ~ 0
+RDY
+Text GLabel 2000 2250 0    60   Input ~ 0
+IRQB
+Text GLabel 2000 2550 0    60   Input ~ 0
+NMIB
+Text GLabel 2000 3600 0    60   Input ~ 0
+BE
+Text GLabel 2000 3900 0    60   Input ~ 0
+RWB
+Text GLabel 2000 3300 0    60   Input ~ 0
+SOB
+Text GLabel 2000 1800 0    60   Input ~ 0
+VPB
+Text GLabel 2000 2100 0    60   Input ~ 0
+PHI1O
+Text GLabel 2000 2400 0    60   Input ~ 0
+MLB
+Text GLabel 2000 2700 0    60   Input ~ 0
+SYNC
+Text GLabel 2000 3150 0    60   Input ~ 0
+PHI2O
+$Comp
+L SW_PUSH_SAFE SW1
+U 1 1 55F8451B
+P 2875 6425
+F 0 "SW1" H 3025 6535 50  0000 C CNN
+F 1 "SW_PUSH_SAFE" H 2875 6345 50  0000 C CNN
+F 2 "6502Footprints:TACTILE_SWITCH" H 2875 6425 60  0001 C CNN
+F 3 "" H 2875 6425 60  0000 C CNN
+	1    2875 6425
+	1    0    0    -1  
+$EndComp
+Text GLabel 5500 6200 2    60   Input ~ 0
+CLOCK
+Text GLabel 3250 5250 2    60   Input ~ 0
+A15
+$Comp
+L C_Small C1
+U 1 1 55FC1E8D
+P 1500 2950
+F 0 "C1" H 1510 3020 50  0000 L CNN
+F 1 ".1uf" H 1510 2870 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 1500 2950 60  0001 C CNN
+F 3 "" H 1500 2950 60  0000 C CNN
+	1    1500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR010
+U 1 1 55FC1FFA
+P 1500 3050
+F 0 "#PWR010" H 1500 2800 50  0001 C CNN
+F 1 "GND" H 1500 2900 50  0000 C CNN
+F 2 "" H 1500 3050 60  0000 C CNN
+F 3 "" H 1500 3050 60  0000 C CNN
+	1    1500 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 55FC45BC
+P 4550 6300
+F 0 "C2" H 4560 6370 50  0000 L CNN
+F 1 ".1uf" H 4560 6220 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 4550 6300 60  0001 C CNN
+F 3 "" H 4550 6300 60  0000 C CNN
+	1    4550 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 55FC4631
+P 4550 6400
+F 0 "#PWR011" H 4550 6150 50  0001 C CNN
+F 1 "GND" H 4550 6250 50  0000 C CNN
+F 2 "" H 4550 6400 60  0000 C CNN
+F 3 "" H 4550 6400 60  0000 C CNN
+	1    4550 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C4
+U 1 1 55FC56A6
+P 8000 1700
+F 0 "C4" H 8010 1770 50  0000 L CNN
+F 1 ".1uf" H 8010 1620 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 8000 1700 60  0001 C CNN
+F 3 "" H 8000 1700 60  0000 C CNN
+	1    8000 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR012
+U 1 1 55FC571B
+P 8000 1600
+F 0 "#PWR012" H 8000 1350 50  0001 C CNN
+F 1 "GND" H 8000 1450 50  0000 C CNN
+F 2 "" H 8000 1600 60  0000 C CNN
+F 3 "" H 8000 1600 60  0000 C CNN
+	1    8000 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C3
+U 1 1 55FC6733
+P 5600 1700
+F 0 "C3" H 5610 1770 50  0000 L CNN
+F 1 ".1uf" H 5610 1620 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 5600 1700 60  0001 C CNN
+F 3 "" H 5600 1700 60  0000 C CNN
+	1    5600 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR013
+U 1 1 55FC678E
+P 5600 1600
+F 0 "#PWR013" H 5600 1350 50  0001 C CNN
+F 1 "GND" H 5600 1450 50  0000 C CNN
+F 2 "" H 5600 1600 60  0000 C CNN
+F 3 "" H 5600 1600 60  0000 C CNN
+	1    5600 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R1
+U 1 1 563561EF
+P 3400 6175
+F 0 "R1" V 3480 6175 50  0000 C CNN
+F 1 "3.3k" V 3400 6175 50  0000 C CNN
+F 2 "6502Footprints:Resistor_Horizontal_RM10mm" V 3330 6175 30  0001 C CNN
+F 3 "" H 3400 6175 30  0000 C CNN
+	1    3400 6175
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR014
+U 1 1 56356356
+P 3400 5950
+F 0 "#PWR014" H 3400 5800 50  0001 C CNN
+F 1 "VCC" H 3400 6100 50  0000 C CNN
+F 2 "" H 3400 5950 60  0000 C CNN
+F 3 "" H 3400 5950 60  0000 C CNN
+	1    3400 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR015
+U 1 1 563631D1
+P 9200 3325
+F 0 "#PWR015" H 9200 3175 50  0001 C CNN
+F 1 "VCC" H 9200 3475 50  0000 C CNN
+F 2 "" H 9200 3325 60  0000 C CNN
+F 3 "" H 9200 3325 60  0000 C CNN
+	1    9200 3325
+	0    -1   -1   0   
+$EndComp
+Entry Wire Line
+	8900 3525 9000 3425
+Entry Wire Line
+	8900 3625 9000 3525
+Entry Wire Line
+	8900 3725 9000 3625
+Entry Wire Line
+	8900 3825 9000 3725
+Entry Wire Line
+	8900 3925 9000 3825
+Entry Wire Line
+	8900 4025 9000 3925
+Entry Wire Line
+	8900 4125 9000 4025
+Entry Wire Line
+	8900 4225 9000 4125
+Entry Wire Line
+	8900 4325 9000 4225
+Entry Wire Line
+	8900 4425 9000 4325
+Entry Wire Line
+	8900 4525 9000 4425
+Entry Wire Line
+	8900 4625 9000 4525
+$Comp
+L GND #PWR016
+U 1 1 563641FD
+P 11175 4525
+F 0 "#PWR016" H 11175 4275 50  0001 C CNN
+F 1 "GND" H 11175 4375 50  0000 C CNN
+F 2 "" H 11175 4525 60  0000 C CNN
+F 3 "" H 11175 4525 60  0000 C CNN
+	1    11175 4525
+	0    -1   -1   0   
+$EndComp
+Text Label 9025 3425 0    60   ~ 0
+A0
+Text Label 9025 3525 0    60   ~ 0
+A1
+Text Label 9025 3625 0    60   ~ 0
+A2
+Text Label 9025 3725 0    60   ~ 0
+A3
+Text Label 9025 3825 0    60   ~ 0
+A4
+Text Label 9025 3925 0    60   ~ 0
+A5
+Text Label 9025 4025 0    60   ~ 0
+A6
+Text Label 9025 4125 0    60   ~ 0
+A7
+Text Label 9025 4225 0    60   ~ 0
+A8
+Text Label 9025 4325 0    60   ~ 0
+A9
+Text Label 9025 4425 0    60   ~ 0
+A10
+Text Label 9025 4525 0    60   ~ 0
+A11
+Entry Wire Line
+	11425 4225 11525 4325
+Entry Wire Line
+	11425 4325 11525 4425
+Entry Wire Line
+	11425 4425 11525 4525
+Text Label 11250 4425 0    60   ~ 0
+A12
+Text Label 11250 4325 0    60   ~ 0
+A13
+Text Label 11250 4225 0    60   ~ 0
+A14
+Text GLabel 11175 4125 2    60   Input ~ 0
+A15
+Entry Wire Line
+	11450 4025 11550 3925
+Entry Wire Line
+	11450 3925 11550 3825
+Entry Wire Line
+	11450 3825 11550 3725
+Entry Wire Line
+	11450 3725 11550 3625
+Entry Wire Line
+	11450 3625 11550 3525
+Entry Wire Line
+	11450 3525 11550 3425
+Entry Wire Line
+	11450 3425 11550 3325
+Entry Wire Line
+	11450 3325 11550 3225
+Text Label 11250 3325 0    60   ~ 0
+D0
+Text Label 11250 3425 0    60   ~ 0
+D1
+Text Label 11250 3525 0    60   ~ 0
+D2
+Text Label 11250 3625 0    60   ~ 0
+D3
+Text Label 11250 3725 0    60   ~ 0
+D4
+Text Label 11250 3825 0    60   ~ 0
+D5
+Text Label 11250 3925 0    60   ~ 0
+D6
+Text Label 11250 4025 0    60   ~ 0
+D7
+Text GLabel 11175 2625 2    60   Input ~ 0
+RESET
+Text GLabel 11175 2925 2    60   Input ~ 0
+CLOCK
+Text GLabel 11175 3025 2    60   Input ~ 0
+BE
+Text GLabel 11175 2825 2    60   Input ~ 0
+SOB
+Text GLabel 11175 2725 2    60   Input ~ 0
+PHI2O
+Text GLabel 11175 3225 2    60   Input ~ 0
+RWB
+Text GLabel 11175 3125 2    60   Input ~ 0
+NC
+Text GLabel 2000 3750 0    60   Input ~ 0
+NC
+$Comp
+L CONN_01X02 P5
+U 1 1 56368898
+P 7800 6150
+F 0 "P5" H 7800 6300 50  0000 C CNN
+F 1 "CONN_01X02" V 7900 6150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 7800 6150 60  0001 C CNN
+F 3 "" H 7800 6150 60  0000 C CNN
+	1    7800 6150
+	-1   0    0    1   
+$EndComp
+$Comp
+L VCC #PWR017
+U 1 1 563688F9
+P 8075 6100
+F 0 "#PWR017" H 8075 5950 50  0001 C CNN
+F 1 "VCC" H 8075 6250 50  0000 C CNN
+F 2 "" H 8075 6100 60  0000 C CNN
+F 3 "" H 8075 6100 60  0000 C CNN
+	1    8075 6100
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR018
+U 1 1 5636892B
+P 8000 6200
+F 0 "#PWR018" H 8000 5950 50  0001 C CNN
+F 1 "GND" H 8000 6050 50  0000 C CNN
+F 2 "" H 8000 6200 60  0000 C CNN
+F 3 "" H 8000 6200 60  0000 C CNN
+	1    8000 6200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR019
+U 1 1 563699E0
+P 8075 5825
+F 0 "#PWR019" H 8075 5575 50  0001 C CNN
+F 1 "GND" H 8075 5675 50  0000 C CNN
+F 2 "" H 8075 5825 60  0000 C CNN
+F 3 "" H 8075 5825 60  0000 C CNN
+	1    8075 5825
+	-1   0    0    1   
+$EndComp
+$Comp
+L C_Small C5
+U 1 1 56369A4D
+P 8075 5925
+F 0 "C5" H 8085 5995 50  0000 L CNN
+F 1 ".1uf" H 8085 5845 50  0000 L CNN
+F 2 "Capacitors_ThroughHole:C_Disc_D3_P2.5" H 8075 5925 60  0001 C CNN
+F 3 "" H 8075 5925 60  0000 C CNN
+	1    8075 5925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2425 6425 2575 6425
+Wire Bus Line
+	3650 1150 3650 2750
+Wire Bus Line
+	6100 1150 6100 2750
+Wire Wire Line
+	6200 1800 6400 1800
+Wire Wire Line
+	6200 1950 6400 1950
+Wire Wire Line
+	6200 2100 6400 2100
+Wire Wire Line
+	6200 2250 6400 2250
+Wire Wire Line
+	6200 2400 6400 2400
+Wire Wire Line
+	6200 2550 6400 2550
+Wire Wire Line
+	6200 2700 6400 2700
+Wire Wire Line
+	6200 2850 6400 2850
+Wire Wire Line
+	3250 1800 3550 1800
+Wire Wire Line
+	3250 1950 3550 1950
+Wire Wire Line
+	3250 2100 3550 2100
+Wire Wire Line
+	3250 2250 3550 2250
+Wire Wire Line
+	3250 2400 3550 2400
+Wire Wire Line
+	3250 2550 3550 2550
+Wire Wire Line
+	3250 2700 3550 2700
+Wire Wire Line
+	3250 2850 3550 2850
+Wire Wire Line
+	3750 1800 4000 1800
+Wire Wire Line
+	3750 1950 4000 1950
+Wire Wire Line
+	3750 2100 4000 2100
+Wire Wire Line
+	3750 2250 4000 2250
+Wire Wire Line
+	3750 2400 4000 2400
+Wire Wire Line
+	3750 2550 4000 2550
+Wire Wire Line
+	3750 2700 4000 2700
+Wire Wire Line
+	3750 2850 4000 2850
+Wire Bus Line
+	6100 3100 6100 5450
+Wire Bus Line
+	3650 5450 3650 3100
+Wire Wire Line
+	6200 3000 6400 3000
+Wire Wire Line
+	6200 3150 6400 3150
+Wire Wire Line
+	6200 3300 6400 3300
+Wire Wire Line
+	6200 3450 6400 3450
+Wire Wire Line
+	6200 3600 6400 3600
+Wire Wire Line
+	6200 3750 6400 3750
+Wire Wire Line
+	6200 3900 6400 3900
+Wire Wire Line
+	6200 4050 6400 4050
+Wire Wire Line
+	6200 4200 6400 4200
+Wire Wire Line
+	6200 4350 6400 4350
+Wire Wire Line
+	6200 4500 6400 4500
+Wire Wire Line
+	6200 4650 6400 4650
+Wire Wire Line
+	6200 4800 6400 4800
+Wire Wire Line
+	6200 4950 6400 4950
+Wire Wire Line
+	6200 5100 6400 5100
+Wire Wire Line
+	3750 3000 4000 3000
+Wire Wire Line
+	3750 3150 4000 3150
+Wire Wire Line
+	3750 3300 4000 3300
+Wire Wire Line
+	3750 3450 4000 3450
+Wire Wire Line
+	3750 3600 4000 3600
+Wire Wire Line
+	3750 3750 4000 3750
+Wire Wire Line
+	3750 3900 4000 3900
+Wire Wire Line
+	3750 4050 4000 4050
+Wire Wire Line
+	3750 4200 4000 4200
+Wire Wire Line
+	3750 4350 4000 4350
+Wire Wire Line
+	3750 4500 4000 4500
+Wire Wire Line
+	3750 4650 4000 4650
+Wire Wire Line
+	3750 4800 4000 4800
+Wire Wire Line
+	3750 4950 4000 4950
+Wire Wire Line
+	3750 5100 4000 5100
+Wire Wire Line
+	3550 3000 3250 3000
+Wire Wire Line
+	3550 3150 3250 3150
+Wire Wire Line
+	3550 3300 3250 3300
+Wire Wire Line
+	3550 3450 3250 3450
+Wire Wire Line
+	3550 3600 3250 3600
+Wire Wire Line
+	3550 3750 3250 3750
+Wire Wire Line
+	3550 3900 3250 3900
+Wire Wire Line
+	3550 4050 3250 4050
+Wire Wire Line
+	3550 4200 3250 4200
+Wire Wire Line
+	3550 4350 3250 4350
+Wire Wire Line
+	3550 4500 3250 4500
+Wire Wire Line
+	3550 4650 3250 4650
+Wire Wire Line
+	3550 4800 3250 4800
+Wire Wire Line
+	3550 4950 3250 4950
+Wire Wire Line
+	3550 5100 3250 5100
+Wire Wire Line
+	2000 2850 1500 2850
+Wire Bus Line
+	3650 1150 10700 1150
+Wire Bus Line
+	3650 5450 8900 5450
+Wire Wire Line
+	3575 6425 3175 6425
+Wire Wire Line
+	3400 6325 3400 6425
+Connection ~ 3400 6425
+Wire Wire Line
+	3400 5950 3400 6025
+Wire Bus Line
+	8900 5450 8900 3475
+Wire Wire Line
+	9200 4525 9000 4525
+Wire Wire Line
+	9200 4425 9000 4425
+Wire Wire Line
+	9200 4325 9000 4325
+Wire Wire Line
+	9200 4225 9000 4225
+Wire Wire Line
+	9200 4125 9000 4125
+Wire Wire Line
+	9200 4025 9000 4025
+Wire Wire Line
+	9200 3925 9000 3925
+Wire Wire Line
+	9200 3825 9000 3825
+Wire Wire Line
+	9200 3725 9000 3725
+Wire Wire Line
+	9200 3625 9000 3625
+Wire Wire Line
+	9200 3525 9000 3525
+Wire Wire Line
+	9200 3425 9000 3425
+Wire Bus Line
+	8900 4825 11525 4825
+Wire Wire Line
+	11425 4225 11175 4225
+Wire Wire Line
+	11425 4325 11175 4325
+Wire Wire Line
+	11425 4425 11175 4425
+Wire Wire Line
+	11450 3325 11175 3325
+Wire Wire Line
+	11450 3425 11175 3425
+Wire Wire Line
+	11450 3525 11175 3525
+Wire Wire Line
+	11450 3625 11175 3625
+Wire Wire Line
+	11450 3725 11175 3725
+Wire Wire Line
+	11450 3825 11175 3825
+Wire Wire Line
+	11450 3925 11175 3925
+Wire Wire Line
+	11450 4025 11175 4025
+Wire Wire Line
+	8000 6100 8075 6100
+Wire Wire Line
+	8075 6100 8075 6025
+$Comp
+L CONN_02X20 P3
+U 1 1 56370158
+P 9450 3575
+F 0 "P3" H 9450 4625 50  0000 C CNN
+F 1 "CONN_02X20" V 9450 3575 50  0000 C CNN
+F 2 "6502Footprints:Pin_Header_Straight_2x20" H 9450 2625 60  0001 C CNN
+F 3 "" H 9450 2625 60  0000 C CNN
+	1    9450 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_02X20 P4
+U 1 1 56370214
+P 10925 3575
+F 0 "P4" H 10925 4625 50  0000 C CNN
+F 1 "CONN_02X20" V 10925 3575 50  0000 C CNN
+F 2 "6502Footprints:Pin_Header_Straight_2x20" H 10925 2625 60  0001 C CNN
+F 3 "" H 10925 2625 60  0000 C CNN
+	1    10925 3575
+	1    0    0    -1  
+$EndComp
+Text GLabel 9700 2725 2    60   Input ~ 0
+RDY
+Text GLabel 9700 2925 2    60   Input ~ 0
+IRQB
+Text GLabel 9700 3125 2    60   Input ~ 0
+NMIB
+Text GLabel 9700 2625 2    60   Input ~ 0
+VPB
+Text GLabel 9700 2825 2    60   Input ~ 0
+PHI1O
+Text GLabel 9700 3025 2    60   Input ~ 0
+MLB
+Text GLabel 9700 3225 2    60   Input ~ 0
+SYNC
+$Comp
+L VCC #PWR020
+U 1 1 563682D3
+P 9700 3325
+F 0 "#PWR020" H 9700 3175 50  0001 C CNN
+F 1 "VCC" H 9700 3475 50  0000 C CNN
+F 2 "" H 9700 3325 60  0000 C CNN
+F 3 "" H 9700 3325 60  0000 C CNN
+	1    9700 3325
+	0    1    -1   0   
+$EndComp
+Entry Wire Line
+	10000 3525 9900 3425
+Entry Wire Line
+	10000 3625 9900 3525
+Entry Wire Line
+	10000 3725 9900 3625
+Entry Wire Line
+	10000 3825 9900 3725
+Entry Wire Line
+	10000 3925 9900 3825
+Entry Wire Line
+	10000 4025 9900 3925
+Entry Wire Line
+	10000 4125 9900 4025
+Entry Wire Line
+	10000 4225 9900 4125
+Entry Wire Line
+	10000 4325 9900 4225
+Entry Wire Line
+	10000 4425 9900 4325
+Entry Wire Line
+	10000 4525 9900 4425
+Entry Wire Line
+	10000 4625 9900 4525
+Text Label 9875 3425 2    60   ~ 0
+A0
+Text Label 9875 3525 2    60   ~ 0
+A1
+Text Label 9875 3625 2    60   ~ 0
+A2
+Text Label 9875 3725 2    60   ~ 0
+A3
+Text Label 9875 3825 2    60   ~ 0
+A4
+Text Label 9875 3925 2    60   ~ 0
+A5
+Text Label 9875 4025 2    60   ~ 0
+A6
+Text Label 9875 4125 2    60   ~ 0
+A7
+Text Label 9875 4225 2    60   ~ 0
+A8
+Text Label 9875 4325 2    60   ~ 0
+A9
+Text Label 9875 4425 2    60   ~ 0
+A10
+Text Label 9875 4525 2    60   ~ 0
+A11
+Wire Wire Line
+	9700 4525 9900 4525
+Wire Wire Line
+	9700 4425 9900 4425
+Wire Wire Line
+	9700 4325 9900 4325
+Wire Wire Line
+	9700 4225 9900 4225
+Wire Wire Line
+	9700 4125 9900 4125
+Wire Wire Line
+	9700 4025 9900 4025
+Wire Wire Line
+	9700 3925 9900 3925
+Wire Wire Line
+	9700 3825 9900 3825
+Wire Wire Line
+	9700 3725 9900 3725
+Wire Wire Line
+	9700 3625 9900 3625
+Wire Wire Line
+	9700 3525 9900 3525
+Wire Wire Line
+	9700 3425 9900 3425
+Wire Bus Line
+	10000 3525 10000 4825
+$Comp
+L GND #PWR021
+U 1 1 5636A7CA
+P 10675 4525
+F 0 "#PWR021" H 10675 4275 50  0001 C CNN
+F 1 "GND" H 10675 4375 50  0000 C CNN
+F 2 "" H 10675 4525 60  0000 C CNN
+F 3 "" H 10675 4525 60  0000 C CNN
+	1    10675 4525
+	0    1    -1   0   
+$EndComp
+Entry Wire Line
+	10425 4225 10325 4325
+Entry Wire Line
+	10425 4325 10325 4425
+Entry Wire Line
+	10425 4425 10325 4525
+Text Label 10600 4425 2    60   ~ 0
+A12
+Text Label 10600 4325 2    60   ~ 0
+A13
+Text Label 10600 4225 2    60   ~ 0
+A14
+Text GLabel 10675 4125 0    60   Input ~ 0
+A15
+Entry Wire Line
+	10400 4025 10300 3925
+Entry Wire Line
+	10400 3925 10300 3825
+Entry Wire Line
+	10400 3825 10300 3725
+Entry Wire Line
+	10400 3725 10300 3625
+Entry Wire Line
+	10400 3625 10300 3525
+Entry Wire Line
+	10400 3525 10300 3425
+Entry Wire Line
+	10400 3425 10300 3325
+Entry Wire Line
+	10400 3325 10300 3225
+Text Label 10600 3325 2    60   ~ 0
+D0
+Text Label 10600 3425 2    60   ~ 0
+D1
+Text Label 10600 3525 2    60   ~ 0
+D2
+Text Label 10600 3625 2    60   ~ 0
+D3
+Text Label 10600 3725 2    60   ~ 0
+D4
+Text Label 10600 3825 2    60   ~ 0
+D5
+Text Label 10600 3925 2    60   ~ 0
+D6
+Text Label 10600 4025 2    60   ~ 0
+D7
+Text GLabel 10675 2625 0    60   Input ~ 0
+RESET
+Text GLabel 10675 2925 0    60   Input ~ 0
+CLOCK
+Text GLabel 10675 3025 0    60   Input ~ 0
+BE
+Text GLabel 10675 2825 0    60   Input ~ 0
+SOB
+Text GLabel 10675 2725 0    60   Input ~ 0
+PHI2O
+Text GLabel 10675 3225 0    60   Input ~ 0
+RWB
+Text GLabel 10675 3125 0    60   Input ~ 0
+NC
+Wire Wire Line
+	10425 4225 10675 4225
+Wire Wire Line
+	10425 4325 10675 4325
+Wire Wire Line
+	10425 4425 10675 4425
+Wire Wire Line
+	10400 3325 10675 3325
+Wire Wire Line
+	10400 3425 10675 3425
+Wire Wire Line
+	10400 3525 10675 3525
+Wire Wire Line
+	10400 3625 10675 3625
+Wire Wire Line
+	10400 3725 10675 3725
+Wire Wire Line
+	10400 3825 10675 3825
+Wire Wire Line
+	10400 3925 10675 3925
+Wire Wire Line
+	10400 4025 10675 4025
+Wire Bus Line
+	11525 4825 11525 4325
+Wire Bus Line
+	10325 4325 10325 4825
+Wire Bus Line
+	10300 3925 10300 1150
+Wire Bus Line
+	11550 3925 11550 1150
+Wire Bus Line
+	11550 1150 10675 1150
+$Comp
+L CONN_01X06 P6
+U 1 1 5636CCA8
+P 9675 1825
+F 0 "P6" H 9675 2175 50  0000 C CNN
+F 1 "CONN_01X06" V 9775 1825 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x06" H 9675 1825 60  0001 C CNN
+F 3 "" H 9675 1825 60  0000 C CNN
+	1    9675 1825
+	1    0    0    -1  
+$EndComp
+Text GLabel 9475 1575 0    60   Input ~ 0
+RAM_WE
+Text GLabel 9475 1675 0    60   Input ~ 0
+RAM_OE
+Text GLabel 9475 1775 0    60   Input ~ 0
+RAM_CE
+Text GLabel 8000 2100 2    60   Input ~ 0
+RAM_WE
+Text GLabel 8000 2250 2    60   Input ~ 0
+RAM_OE
+Text GLabel 8000 2400 2    60   Input ~ 0
+RAM_CE
+Text GLabel 5600 2100 2    60   Input ~ 0
+ROM_WE
+Text GLabel 5600 2250 2    60   Input ~ 0
+ROM_OE
+Text GLabel 5600 2400 2    60   Input ~ 0
+ROM_CE
+Text GLabel 9475 2075 0    60   Input ~ 0
+ROM_CE
+Text GLabel 9475 1975 0    60   Input ~ 0
+ROM_OE
+Text GLabel 9475 1875 0    60   Input ~ 0
+ROM_WE
+$Comp
+L GND #PWR022
+U 1 1 563777A9
+P 9200 2625
+F 0 "#PWR022" H 9200 2375 50  0001 C CNN
+F 1 "GND" H 9200 2475 50  0000 C CNN
+F 2 "" H 9200 2625 60  0000 C CNN
+F 3 "" H 9200 2625 60  0000 C CNN
+	1    9200 2625
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR023
+U 1 1 563777E8
+P 9200 2725
+F 0 "#PWR023" H 9200 2475 50  0001 C CNN
+F 1 "GND" H 9200 2575 50  0000 C CNN
+F 2 "" H 9200 2725 60  0000 C CNN
+F 3 "" H 9200 2725 60  0000 C CNN
+	1    9200 2725
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR024
+U 1 1 56377820
+P 9200 2825
+F 0 "#PWR024" H 9200 2575 50  0001 C CNN
+F 1 "GND" H 9200 2675 50  0000 C CNN
+F 2 "" H 9200 2825 60  0000 C CNN
+F 3 "" H 9200 2825 60  0000 C CNN
+	1    9200 2825
+	0    1    1    0   
+$EndComp
+$Comp
+L VCC #PWR025
+U 1 1 5637789C
+P 9200 3225
+F 0 "#PWR025" H 9200 3075 50  0001 C CNN
+F 1 "VCC" H 9200 3375 50  0000 C CNN
+F 2 "" H 9200 3225 60  0000 C CNN
+F 3 "" H 9200 3225 60  0000 C CNN
+	1    9200 3225
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR026
+U 1 1 563778D4
+P 9200 3125
+F 0 "#PWR026" H 9200 2975 50  0001 C CNN
+F 1 "VCC" H 9200 3275 50  0000 C CNN
+F 2 "" H 9200 3125 60  0000 C CNN
+F 3 "" H 9200 3125 60  0000 C CNN
+	1    9200 3125
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR027
+U 1 1 5637790C
+P 9200 2925
+F 0 "#PWR027" H 9200 2775 50  0001 C CNN
+F 1 "VCC" H 9200 3075 50  0000 C CNN
+F 2 "" H 9200 2925 60  0000 C CNN
+F 3 "" H 9200 2925 60  0000 C CNN
+	1    9200 2925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L VCC #PWR028
+U 1 1 56377944
+P 9200 3025
+F 0 "#PWR028" H 9200 2875 50  0001 C CNN
+F 1 "VCC" H 9200 3175 50  0000 C CNN
+F 2 "" H 9200 3025 60  0000 C CNN
+F 3 "" H 9200 3025 60  0000 C CNN
+	1    9200 3025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56395D54
+P 4550 6000
+F 0 "#PWR?" H 4550 5750 50  0001 C CNN
+F 1 "GND" H 4550 5850 50  0000 C CNN
+F 2 "" H 4550 6000 60  0000 C CNN
+F 3 "" H 4550 6000 60  0000 C CNN
+	1    4550 6000
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
